@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Label Printer</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+	  <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container fluid">
+      <h1>Label Printer</h1>
+    </div>
+
+    <div class="container fluid">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="bottle-tab" data-bs-toggle="tab" data-bs-target="#bottle-tab-pane" type="button" role="tab" aria-controls="bottle-tab-pane" aria-selected="true">Bottle Labels</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="malt-tab" data-bs-toggle="tab" data-bs-target="#malt-tab-pane" type="button" role="tab" aria-controls="malt-tab-pane" aria-selected="false">Malt Labels</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="bottle-tab-pane" role="tabpanel" aria-labelledby="bottle-tab" tabindex="0">
+
+        </div>
+
+        <div class="tab-pane fade" id="malt-tab-pane" role="tabpanel" aria-labelledby="malt-tab" tabindex="0">
+          <div class="mb-3">
+            <label for="maltName" class="form-label">Malt Name</label>
+            <input type="text" class="form-control" id="maltName">
+          </div>
+
+          <div class="mb-3">
+            <label for="manufacturer" class="form-label">Manufacturer</label>
+            <input type="text" class="form-control" id="manufacturer">
+          </div>
+
+          <div class="mb-3">
+            <label for="lovibond" class="form-label">°L</label>
+            <input type="text" class="form-control" id="lovibond">
+          </div>
+
+          <div class="mb-3">
+            <label for="ppg" class="form-label">PPG</label>
+            <input type="text" class="form-control" id="ppg">
+          </div>
+
+          <button type="button" class="btn btn-primary" id="printMalt">Print</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
